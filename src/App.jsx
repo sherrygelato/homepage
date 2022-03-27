@@ -15,9 +15,9 @@ function App() {
   return (
     <div className={styles.app}>
       {/* <Router> */}
-      <Router basename="homepage">
+      <Router>
       <NavBar />
-        <Routes>
+        <Routes basename="homepage">
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
