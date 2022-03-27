@@ -3,7 +3,7 @@
 ./data/apiKeys.js
 /data/apiKeys.js
 *.apiKeys.js
-homepage/src/data/apikeys.js
+data/apikeys.js
 
 # dependencies
 /node_modules
