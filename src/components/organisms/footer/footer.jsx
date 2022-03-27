@@ -2,12 +2,24 @@ import React from "react";
 
 import styles from "./footer.module.css";
 
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube, } from "@fortawesome/free-brands-svg-icons";
+import { faBlog, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faInstagram, } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  
+  function onGithubClick() {
+    window.open("https://github.com/sherrygelato")
+  }
+  
+  function onBlogClick() {
+    window.open("https://sherrygelato.tistory.com")
+  }
+  
+  function onInstagramClick() {
+    window.open("https://www.instagram.com/seeeeeui/")
+  }
+  
   function onEmailClick() {
     window.open("mailto:sherrygelato.lab@gmail.com")
   }
@@ -16,31 +28,42 @@ const Footer = () => {
     <div className={styles.footer_container}>
       <section className={styles.social_media}>
         <div className={styles.social_media_wrap}>
-          <small className={styles.website_rights}>
-            sherrygelato © 2022
-          </small>
+          <div className={styles.website_rights}>
+            Developed by SEUNGEUN YI
+          </div>
+          <div className={styles.social_logo}>
+            Copyright © 2022
+          </div>
           <div className={styles.social_icons}>
-            <Link
+            <div
               className={styles.social_icon_link}
-              to="https://github.com/sherrygelato?tab=repositories"
+              onClick={onGithubClick}
               target="_blank"
               aria-label="Github"
             >
               <FontAwesomeIcon icon={faGithub} />
-            </Link>
-            <Link
+            </div>
+            <div
               className={styles.social_icon_link}
-              to="/"
+              onClick={onBlogClick}
               target="_blank"
-              aria-label="Youtube"
+              aria-label="Tistory"
             >
-              <FontAwesomeIcon icon={faYoutube} />
-            </Link>
+              <FontAwesomeIcon icon={faBlog} />
+            </div>
+            <div
+              className={styles.social_icon_link}
+              onClick={onInstagramClick}
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </div>
             <div
               className={styles.social_icon_link}
               onClick={onEmailClick}
               target="_blank"
-              aria-label="email"
+              aria-label="Email"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
