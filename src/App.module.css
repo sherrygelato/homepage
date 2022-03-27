@@ -1,0 +1,37 @@
+/* 폰트 */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html > body {
+  font-family:"GmarketSansMedium";
+}
+
+/* base setting */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+/* add setting */
+* {
+  box-sizing: border-box;
+}
+
+
+.App {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
