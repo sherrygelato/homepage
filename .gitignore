@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-./data/apiKeys.js
-/data/apiKeys.js
+./src/data/apiKeys.js
+/src/data/apiKeys.js
 *.apiKeys.js
-data/apikeys.js
+src/data/apikeys.js
 
 # dependencies
 /node_modules
