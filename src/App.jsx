@@ -14,10 +14,10 @@ import Footer from './components/organisms/footer/footer'
 function App() {
   return (
     <div className={styles.app}>
-      {/* <Router> */}
       <Router>
+      {/* <Router basename="sherry"> */}
       <NavBar />
-        <Routes basename="homepage">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
