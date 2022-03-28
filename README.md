@@ -1,5 +1,6 @@
 # homepage
 - This is Sherrygelato's homepage
+- https://sherrygelato.github.io/homepage
 
 > start : npm run start
 > deploy : npm run deploy
