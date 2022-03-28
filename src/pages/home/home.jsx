@@ -1,20 +1,9 @@
 import React from 'react';
 
 import styles from './home.module.css';
+import { Link } from "react-router-dom";
 
 function Home() {
-  function toAboutClick() {
-    window.location.href = '/about';
-  }
-  
-  function toResumeClick() {
-    window.location.href = '/resume';
-  }
-  
-  function toContactClick() {
-    window.location.href = '/contact';
-  }
-
   return (
     <>
         <div className={styles.container}>
@@ -22,37 +11,37 @@ function Home() {
         </div>
         <div className={styles.container3}>
           <div className={styles.container3_child}>
-            <button 
+            <Link 
               className={styles.square_circle}
-              onClick={toAboutClick}
+              to="/about"
             >
               <div className={styles.text_box}>
                 <h3>Continue Exploring?</h3>
                 <h1>About Me</h1>
               </div>
-            </button>
+            </Link>
           </div>
           <div className={styles.container3_child}>
-          <button 
+          <Link 
               className={styles.square_circle}
-              onClick={toResumeClick}
+              to="/resume"
             >
               <div className={styles.text_box}>
                 <h3>in Korean</h3>
                 <h1>Resume</h1>
               </div>
-            </button>
+            </Link>
           </div>
           <div className={styles.container3_child}>
-            <button 
+            <Link 
               className={styles.square_circle}
-              onClick={toContactClick}
+              to="/contact"
             >
               <div className={styles.text_box}>
                 <h3>Interested?</h3>
                 <h1>Contact Me</h1>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
     </>
