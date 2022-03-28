@@ -2,8 +2,6 @@ import React from 'react';
 
 import styles from './resume.module.css';
 
-import pdf from '../../data/resume.pdf'
-
 function Resume() {
   const downloadResume = () => {
     window.open('https://drive.google.com/file/d/1uPky82eNu8GE-VTxNLIDw1ahrb97Rq_b/view?usp=sharing')
