@@ -33,6 +33,7 @@
     height: 50%;
     display: flex;
     flex-flow: column;
+    background: #fff;
     border: #000 solid 8px;
     transition: 1.2s;
     margin: auto;

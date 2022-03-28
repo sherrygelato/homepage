@@ -22,7 +22,7 @@ function Home() {
         </div>
         <div className={styles.container3}>
           <div className={styles.container3_child}>
-            <div 
+            <button 
               className={styles.square_circle}
               onClick={toAboutClick}
             >
@@ -30,10 +30,10 @@ function Home() {
                 <h3>Continue Exploring?</h3>
                 <h1>About Me</h1>
               </div>
-            </div>
+            </button>
           </div>
           <div className={styles.container3_child}>
-          <div 
+          <button 
               className={styles.square_circle}
               onClick={toResumeClick}
             >
@@ -41,10 +41,10 @@ function Home() {
                 <h3>in Korean</h3>
                 <h1>Resume</h1>
               </div>
-            </div>
+            </button>
           </div>
           <div className={styles.container3_child}>
-            <div 
+            <button 
               className={styles.square_circle}
               onClick={toContactClick}
             >
@@ -52,7 +52,7 @@ function Home() {
                 <h3>Interested?</h3>
                 <h1>Contact Me</h1>
               </div>
-            </div>
+            </button>
           </div>
         </div>
     </>
