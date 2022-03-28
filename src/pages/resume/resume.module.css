@@ -18,8 +18,9 @@
 
 .download {
     cursor: pointer;
-    border: #fff solid 3px;
-    background-color: #fff;
+    color: #fff;
+    border: rgba(0, 0, 0, 0.7) solid 3px;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5%;
     margin: 1% auto;
 }
