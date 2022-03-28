@@ -4,15 +4,15 @@ import styles from './home.module.css';
 
 function Home() {
   function toAboutClick() {
-    window.location.replace('/about');
+    window.location.replace('/homepage/about');
   }
   
   function toResumeClick() {
-    window.location.replace('/resume');
+    window.location.replace('/homepage/resume');
   }
   
   function toContactClick() {
-    window.location.replace('/contact');
+    window.location.replace('/homepage/contact');
   }
 
   return (
