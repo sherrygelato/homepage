@@ -4,6 +4,7 @@ import styles from './App.module.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from './service/scroll/scroll';
 import NavBar from './components/organisms/navbar/navbar';
 import Home from './pages/home/home';
 import About from './pages/about/about';
@@ -14,7 +15,8 @@ import Footer from './components/organisms/footer/footer'
 function App() {
   return (
     <div className={styles.app}>
-      <Router>
+      <Router basename='homepage'>
+      <ScrollToTop />
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

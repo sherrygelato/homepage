@@ -11,7 +11,7 @@
 }
   
 .resume {
-    background: url('./resume.png') center center/cover no-repeat;
+    background: url('../../../public/images/resume.png') center center/cover no-repeat;
     height: 100vh;
     width: 50%;
 }
