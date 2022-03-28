@@ -4,15 +4,15 @@ import styles from './home.module.css';
 
 function Home() {
   function toAboutClick() {
-    window.location.href = '/homepage/about';
+    window.location.href = '/about';
   }
   
   function toResumeClick() {
-    window.location.href = '/homepage/resume';
+    window.location.href = '/resume';
   }
   
   function toContactClick() {
-    window.location.href = '/homepage/contact';
+    window.location.href = '/contact';
   }
 
   return (
